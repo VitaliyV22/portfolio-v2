@@ -23,7 +23,7 @@ export const Contact = () => {
           Say hello
         </a>
       </div>
-      <div className="flex gap-2 w-auto mt-5 items-center justify-center  ">
+      <div className="flex gap-5 pt-5 w-auto mt-5 items-center justify-center  ">
         <div>
           {" "}
           <Link className="cursor-pointer" to="navbar"
