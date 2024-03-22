@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-
+import Resume from "../../assets/Vitaliy Vitanskyy Resume.pdf";
 
 export const Header = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
- 
-  const resumeGo = new URL('../../assets/Vitanskyy Resume.pdf', import.meta.url)
+
+  const resumeGo = new URL(Resume, import.meta.url).href;
 
   return (
     <div
@@ -44,7 +44,7 @@ export const Header = () => {
           target="_blank"
           className="cursor-pointer text-teal-200"
           rel="noopener noreferrer"
-          href= {resumeGo}
+          href={resumeGo}
         >
           Resume
         </a>
@@ -95,21 +95,27 @@ export const Header = () => {
               : "absolute bg-emerald-800 border font-bold top-0 left-0 w-[20rem] h-[30rem] flex flex-col items-start z-200 p-10 gap-10"
           }
         >
-          <Link>
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             {" "}
             <li className="py-4 border p-2 text-white text-4xl">Projects</li>
           </Link>
-          <Link>
+          <a
+            onClick={handleClick}
+            target="_blank"
+            className="cursor-pointer text-teal-200"
+            rel="noopener noreferrer"
+            href={resumeGo}
+          >
             {" "}
             <li className="py-4 border p-2 text-white text-4xl">Resume</li>
+          </a>
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            {" "}
+            <li className="py-2 border p-5 text-white text-4xl">About</li>
           </Link>
-          <Link>
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             {" "}
             <li className="py-2 border p-5 text-white text-4xl">Contact</li>
-          </Link>
-          <Link>
-            {" "}
-            <li className="py-2 border p-5 text-white text-4xl">Projects</li>
           </Link>
         </ul>
       </motion.div>
