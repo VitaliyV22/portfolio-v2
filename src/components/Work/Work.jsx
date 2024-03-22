@@ -20,8 +20,8 @@ export const Work = () => {
         "ErgoStyle showcases a range of ergonomic chairs and desks, along with features and benefits, to attract potential customers interested in improving their workspace setup.",
       languages: ["React JS", "Tailwind CSS", "Next JS"],
       previewImage: Ergo,
-      githubLink: "https://github.com/VitaliyV22/Waybeyond",
-      demoLink: "https://master.d2nv73m0bi1w8n.amplifyapp.com/",
+      githubLink: "https://github.com/VitaliyV22/Ergo-Style",
+      demoLink: "https://main.d1hf54cpjkdfms.amplifyapp.com/",
     },
     {
       name: "Lord of the Rings Librarian",
@@ -67,6 +67,7 @@ export const Work = () => {
                 <div className="lg:flex gap-3 mt-4">
                   <a
                     href={project.githubLink}
+                    target="_blank"
                     className=" text-teal-200 text-xl hover:bg-slate-900    -500 rounded-lg p-2 font-bold"
                   >
                     Github
