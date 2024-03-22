@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 export const Header = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const goToResume = new URL('../../assets/Vitanskyy Resume.pdf', import.meta.url).href
-  
+ 
+  const resumeGo = new URL('../../assets/Vitanskyy Resume.pdf', import.meta.url)
 
   return (
     <div
@@ -44,7 +44,7 @@ export const Header = () => {
           target="_blank"
           className="cursor-pointer text-teal-200"
           rel="noopener noreferrer"
-          href= {goToResume}
+          href= {resumeGo}
         >
           Resume
         </a>
