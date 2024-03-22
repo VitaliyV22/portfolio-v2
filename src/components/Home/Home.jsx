@@ -26,7 +26,7 @@ export const Home = () => {
     <div>
       <motion.div className="w-48 cursor-pointer">
         <Link
-          className="z-200 font-bold group border border-emerald-200 transition hover:-translate-y-1 hover:bg-emerald-600 px-8 py-2 my-2 text-xl flex items-center "
+          className="z-200 font-bold group border border-emerald-200 rounded-lg transition hover:-translate-y-1 hover:bg-emerald-600 px-8 py-2 my-2 text-xl flex items-center "
           to="work"
           smooth={true}
           duration={500}

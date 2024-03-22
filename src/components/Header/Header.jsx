@@ -3,9 +3,12 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
+
 export const Header = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const goToResume = new URL('../../assets/Vitanskyy Resume.pdf', import.meta.url).href
+  
 
   return (
     <div
@@ -41,7 +44,7 @@ export const Header = () => {
           target="_blank"
           className="cursor-pointer text-teal-200"
           rel="noopener noreferrer"
-          href=""
+          href= {goToResume}
         >
           Resume
         </a>

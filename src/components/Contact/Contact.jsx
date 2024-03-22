@@ -18,7 +18,7 @@ export const Contact = () => {
         </div>
         <a
           href="mailto:vitanskyyv@gmail.com"
-          className="font-bold text-teal-200 group border border-emerald-200 transition hover:-translate-y-1 hover:bg-emerald-600 px-8 py-2 my-2 text-xl "
+          className="font-bold text-teal-200 group border rounded-xl border-emerald-200 transition hover:-translate-y-1 hover:bg-emerald-600 px-8 py-2 my-2 text-xl "
         >
           Say hello
         </a>
