@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <>
       <div>
-        <div className="  lg:flex flex-col justify-center items-start h-full p-5 border lg:ml-40 mt-40">
+        <div className="  lg:flex flex-col justify-center items-start h-full p-5  lg:ml-40 mt-40">
           <div>
             {" "}
             <h2 className="mt-2 drop-shadow-md">Vitaliy Vitanskyy</h2>

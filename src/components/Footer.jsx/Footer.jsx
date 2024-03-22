@@ -6,7 +6,7 @@ export const Footer = () => {
       <footer className=" w-full">
         <div className="flex flex-col justify-center items-center px-4 pb-8 sm:px-6 lg:px-8 ">
           <div className=" ">
-            <a href="" className="text-sm font-mono text-teal-300">
+            <a href="https://github.com/VitaliyV22/portfolio-v2" className="text-sm font-mono text-teal-300">
               Built by Vitaliy Vitanskyy
             </a>
           </div>

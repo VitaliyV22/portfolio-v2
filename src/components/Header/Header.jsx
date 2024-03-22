@@ -13,7 +13,7 @@ export const Header = () => {
     >
       {/* menu */}
 
-      <div className="hidden  lg:flex items-center font-mono gap-5 w-full  h-auto">
+      <div className="hidden  lg:flex items-center font-mono gap-5  lg:w-full  h-auto">
         <Link to="home" smooth={true} duration={500}>
           <a className="z-200 text-4xl font-bold bg-teal-300 rounded-3xl p-1 cursor-pointer transition duration-300 ease-in-out transform text-slate-900 hover:scale-100 ">
             VV
@@ -71,18 +71,35 @@ export const Header = () => {
           className={
             !nav
               ? "hidden"
-              : "absolute text-white font-bold top-0 left-0 w-full bg-gradient-to-b from-blue-100 via-blue-500 to-blue-300 h-screen flex flex-col justify-center items-center z-10"
+              : "absolute bg-emerald-800 border font-bold top-0 left-0 w-[20rem]  h-[30rem] flex flex-col items-start z-200 p-10 gap-10  "
           }
         >
-          <li className="py-6 text-4xl border-indigo-600">Projects</li>
-          <li className="py-6 text-4xl">Resume</li>
-          <li className="py-6 text-4xl">Contact</li>
+          <Link>
+            {" "}
+            <li className="  py-4 border p-2 text-white  text-4xl">Projects</li>
+          </Link>
+          <Link>
+            {" "}
+            <li className=" py-4  border p-2 text-white text-4xl">Resume</li>
+          </Link>
+          <Link>
+            {" "}
+            <li className=" py-2  border p-5 text-white text-4xl">Contact</li>
+          </Link>
+          <Link>
+            {" "}
+            <li className="  py-2  border p-5 text-white text-4xl">
+              Projects
+            </li>
+          </Link>
         </ul>
       </div>
 
       {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10 ">
-        <div className="">{!nav ? <FaBars /> : <FaTimes />}</div>
+      <div onClick={handleClick} className="lg:hidden z-10 ">
+        <div className="text-teal-200 absolute left-0  ">
+          {!nav ? <FaBars size={40} /> : <FaTimes size={30} />}
+        </div>
       </div>
     </div>
   );

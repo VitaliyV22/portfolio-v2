@@ -10,7 +10,8 @@ import { Footer } from "./components/Footer.jsx/Footer";
 function App() {
   return (
    <>
-   <Header/>
+   <div className="z-50 relative"><Header/></div>
+   
    <Home />
    <About />
    <Work />
