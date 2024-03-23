@@ -19,7 +19,7 @@ export const About = () => {
 
   return (
     <div id="about">
-      <div className="lg:h-[70rem] mx-auto px-4 lg:flex items-center justify-center gap-20">
+      <div className="lg:h-[70rem]  mx-auto px-4 lg:flex items-center justify-center gap-20">
         <div className="lg:flex flex-col h-auto lg:w-1/2 justify-center items-start gap-3">
           <motion.h2
             initial={{ opacity: 0, x: -100 }}

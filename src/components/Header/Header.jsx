@@ -42,7 +42,7 @@ export const Header = () => {
         </Link>
         <a
           target="_blank"
-          className="cursor-pointer text-teal-200"
+          className="cursor-pointer"
           rel="noopener noreferrer"
           href={resumeGo}
         >
@@ -92,7 +92,7 @@ export const Header = () => {
           className={
             !nav
               ? "hidden"
-              : "absolute bg-emerald-800 border font-bold top-0 left-0 w-[20rem] h-[30rem] flex flex-col items-start z-200 p-10 gap-10"
+              : "absolute bg-emerald-800  font-bold top-0 left-0 w-screen h-screen flex flex-col items-center justify-center z-200 p-10 gap-10 "
           }
         >
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
