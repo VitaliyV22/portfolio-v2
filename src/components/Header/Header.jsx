@@ -121,7 +121,7 @@ export const Header = () => {
       </motion.div>
 
       {/* hamburger */}
-      <div onClick={handleClick} className="lg:hidden z-10 ">
+      <div onClick={handleClick} className="lg:hidden z-50 ">
         <div className="text-teal-200 absolute left-0  ">
           {!nav ? <FaBars size={40} /> : <FaTimes size={30} />}
         </div>

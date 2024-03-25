@@ -10,9 +10,9 @@ import { Footer } from "./components/Footer.jsx/Footer";
 function App() {
   return (
    <>
-   <div className="z-50 "><Header/></div>
+   <div className="z-50 relative"><Header/></div>
    
-   <Home />
+   <Home className="z-0"/>
    <About />
    <Work />
    <Contact />

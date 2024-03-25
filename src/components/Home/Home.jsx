@@ -10,7 +10,7 @@ export const Home = () => {
     <div>
       
       <motion.div initial={{ opacity: 0, y: -110 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} >
-        <h2 className="mt-2 drop-shadow-md">Vitaliy Vitanskyy</h2>
+        <h2 className="mt-2  text-teal-300 drop-shadow-md">Vitaliy Vitanskyy</h2>
       </motion.div>
       <motion.div initial={{ opacity: 0, y: -80 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} >
         <h3 className="mt-4 font-bold">I write code & build projects</h3>
